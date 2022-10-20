@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<!--Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.-->
+</body>
+<script>
+    function daomang() {
+        let a = [];
+        let sothutu = 1;
+        let b = prompt('Nhập vào số ' + sothutu);//nhập vào số thứ tự
+        while (b !== '') {//dừng nhập khi không nhập
+            if (isNaN(b)) {//nếu không nhập số thì bắt nhập lại
+                while (isNaN(b)) {
+                    b = prompt('Hãy nhập vào số cho số thứ ' + sothutu);
+                }
+            } else {
+                a.push(b);
+                sothutu++;
+                b = prompt('Nhập vào số ' + sothutu);
+            }
+        }
+        document.write('Mảng ban đầu: '+'['+a+']'+'<br>');
+        for (let tg, first = 0, last = a.length - 1; first < last; first++, last--) {
+            tg = a[first];
+            a[first] = a[last]
+            a[last] = tg;
+        }document.write('Mảng sau khi đổi: '+'['+a+']'+'<br>');
+    }
+    daomang()
+</script>
+</html>

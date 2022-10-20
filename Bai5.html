@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<!--Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+</body>
+<script>
+
+    let a = [];
+    let st1 = +prompt('Nhập vào số thứ 1: ');
+    a.push(st1);
+    let st2 = +prompt('Nhập vào số thứ 2: ');
+    a.push(st2);
+    let st3 = +prompt('Nhập vào số thứ 3: ');
+    a.push(st3);
+    console.log(a)
+    function min(a) {
+        let min = a[0];
+        for(let i = 0; i < a.length; i++){
+            if(a[i] < min){
+                min = a[i];
+            }
+        }
+        alert('Số nhỏ nhất là: '+ min)
+    }
+
+    min(a)
+</script>
+</html>

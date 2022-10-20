@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<!--Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+</body>
+<script>
+    function doicho2so() {
+        let st1 = prompt('Nhập vào số thứ 1: ');
+        let st2 = prompt('Nhập vào số thứ 2: ');
+        let tg
+        tg = st1;
+        st1 = st2;
+        st2 = tg;
+        document.write('Số thứ 1 sau khi đổi: ' + st1+'<br>');
+        document.write('Số thứ 2 sau khi đổi: ' + st2);
+    }
+
+    doicho2so()
+</script>
+</html>
